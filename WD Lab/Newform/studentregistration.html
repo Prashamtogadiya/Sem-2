@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Student Register</title>
+<style>
+td {
+    font-size: 70%;
+}
+input[type="date"] {
+    width: 80px;
+    height: 10px;
+    font-size: 90%;
+}
+input[type="file"] {
+    height: 20px;
+    font-size: 90%;
+}
+input[type="text"] {
+    width: 145px;
+    height: 10px;
+    font-size: 90%;
+}
+input[type="password"] {
+    width: 160px;
+    height: 10px;
+    font-size: 90%;
+}
+input[type="number"] {
+    width: 145px;
+    height: 10px;
+    font-size: 90%;
+}
+input[type="email"] {
+
+    height: 10px;
+    font-size: 90%;
+}
+input[type="url"] {
+    height: 10px;
+    font-size: 90%;
+}
+button {
+    font-size: 90%;
+    border: none;
+}
+strong {
+    background-color: #c3c3c3;
+}
+</style>
+</head>
+<body>
+<header align="center">
+    <h1>Student Registration</h1>
+</header>
+<fieldset>
+    <legend align="center">Personal Information</legend>
+    <form>
+        <table align="center" border="0" cellspacing="10">
+            <tr>
+                <td width="76">Name*</td>
+                <td width="254"><input type="text" required placeholder="Enter Your Name" />
+                    &nbsp;
+                    &nbsp;&nbsp; </td>
+                <td width="95" align="right">Password*</td>
+                <td width="160"><input type="password" required placeholder="Enter Your Paasword" /></td>
+            </tr>
+            <tr>
+                <td>Email*</td>
+                <td colspan="3"><input type="email" required placeholder="Enter Your Email" style="width:98.3%" /></td>
+            </tr>
+            <tr>
+                <td>Mobile Number</td>
+                <td><input type="number" required placeholder="Enter Mobile Number" />
+                    &nbsp; &nbsp;&nbsp; </td>
+                <td align="right">Date Of Birth</td>
+                <td><input type="Date" required placeholder="Enter Your Paasword" /></td>
+            </tr>
+            <tr>
+                <td valign="top">Gender</td>
+                <td valign="top"><input type="radio" checked name="Gender" />
+                    Male <br />
+                    <input type="radio" name="Gender" />
+                    Female </td>
+                <td valign="top">Hobbies</td>
+                <td><input type="Checkbox" />
+                    Reading<br />
+                    <input type="Checkbox" />
+                    Singing<br />
+                    <input type="Checkbox" />
+                    Cricket<br />
+                    <input type="Checkbox" />
+                    Swimming<br /></td>
+            </tr>
+            <tr>
+                <td>CGPA</td>
+                <td align="left" colspan="2" style="width: 350px"><input
+              type="range"
+              id="cgpaRange"
+              name="cgpaRange"
+              min="0"
+              max="10"
+              step="0.1"
+              value="5"
+            />
+                    <button type="button">OR </button>
+                    <input type="number" id="cgpaInput" name="cgpaInput" min="0"
+            max="10" step="0.1" value="5" placeholder="Enter CGPA"></td>
+            </tr>
+            <tr>
+                <td>Insert Resume</td>
+                <td colspan="2"><input type="file"></td>
+            </tr>
+            <tr>
+                <td>Linked In Profile</td>
+                <td><input type="url" placeholder="Enter Url Of Your Profile" style="width:213%"></td>
+            </tr>
+        </table>
+        <table align="center" border="0" cellspacing="10">
+            <tr>
+                <td width="57"><button type="submit">Submit</button></td>
+                <td width="41"><button type="reset">Reset</button></td>
+            </tr>
+        </table>
+    </form>
+</fieldset><br><br>
+    <caption  style="font-size: 90%;">Comments</caption><br>
+    <textarea rows="5" cols="164" placeholder="Please Enter Suggestion"></textarea>
+<script>
+      // Optional: You can add JavaScript to synchronize the values between the range and number inputs.
+      var rangeInput = document.getElementById("cgpaRange");
+      var numberInput = document.getElementById("cgpaInput");
+
+      rangeInput.addEventListener("input", function () {
+        numberInput.value = this.value;
+      });
+
+      numberInput.addEventListener("input", function () {
+        rangeInput.value = this.value;
+      });
+    </script>
+</body>
+</html>

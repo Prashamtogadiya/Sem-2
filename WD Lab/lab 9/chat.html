@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            overflow: hidden;
+        }
+
+        .rainbow-container {
+            display: flex;
+        }
+
+        .rainbow-box {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            border-radius: 0;
+            transition: border-radius 0.5s ease-in-out;
+        }
+
+        .box1 { background-color: violet; }
+        .box2 { background-color: indigo; }
+        .box3 { background-color: blue; }
+        .box4 { background-color: green; }
+        .box5 { background-color: yellow; }
+        .box6 { background-color: orange; }
+        .box7 { background-color: red; }
+
+        @keyframes fallDown {
+            0% {
+                transform: translateY(-100px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes changeToCircle {
+            0% {
+                border-radius: 0;
+            }
+            100% {
+                border-radius: 50%;
+            }
+        }
+
+        .falling .rainbow-box {
+            animation: fallDown 3s linear forwards, changeToCircle 0.5s ease-in-out forwards;
+        }
+
+        .falling .rainbow-box:nth-child(2) {
+            animation-delay: 2s;
+        }
+
+        .falling .rainbow-box:nth-child(3) {
+            animation-delay: 4s;
+        }
+
+        .falling .rainbow-box:nth-child(4) {
+            animation-delay: 6s;
+        }
+
+        .falling .rainbow-box:nth-child(5) {
+            animation-delay: 8s;
+        }
+
+        .falling .rainbow-box:nth-child(6) {
+            animation-delay: 10s;
+        }
+
+        .falling .rainbow-box:nth-child(7) {
+            animation-delay: 12s;
+        }
+    </style>
+</head>
+<body>
+    <div class="rainbow-container falling">
+        <div class="rainbow-box box1"></div>
+        <div class="rainbow-box box2"></div>
+        <div class="rainbow-box box3"></div>
+        <div class="rainbow-box box4"></div>
+        <div class="rainbow-box box5"></div>
+        <div class="rainbow-box box6"></div>
+        <div class="rainbow-box box7"></div>
+    </div>
+</body>
+</html>

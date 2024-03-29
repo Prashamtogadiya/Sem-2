@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @keyframes squareToCircle {
+        from {
+          top: 0;
+          width: 100px;
+          height: 100px;
+          background-color: #3498db;
+        }
+        to {
+          top: 100;
+          border-radius: 50%;
+          background-color: #e74c3c;
+        }
+      }
+
+      .square {
+        width: 100px;
+        height: 100px;
+        background-color: #3498db;
+        animation-name: squareToCircle;
+        animation-duration: 5s;
+        transition: all 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="square"></div>
+  </body>
+</html>

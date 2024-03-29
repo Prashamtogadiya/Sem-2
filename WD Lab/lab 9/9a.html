@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @keyframes colorer {
+        to {
+          background-color: red;
+        }
+        from {
+          background-color: yellow;
+        }
+      }
+      @keyframes colorr {
+        0% {
+          top: 100px;
+          left: 100px;
+          background-color: rebeccapurple;
+        }
+        25% {
+          top: 100px;
+          left: 500px;
+          background-color: yellow;
+        }
+        50% {
+          left: 500px;
+          top: 500px;
+          background-color: violet;
+        }
+        75% {
+          top: 500px;
+          left: 100px;
+          background-color: blue;
+        }
+        100% {
+          left: 100px;
+          top: 100px;
+          background-color: springgreen;
+        }
+      }
+      .a1 {
+        animation-name: colorer;
+        margin: 20px;
+        width: 60%;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+      .a2 {
+        animation-name: colorr;
+        animation-duration: 5s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        font-size: 50px;
+        animation-direction:reverse;
+        position: absolute;
+        animation-timing-function: linear;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="a1">Darshan university</div>
+    <div class="a2">Lorem ipsum dolor sit amet.</div>
+  </body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lab 10 part B</title>
+    <style type="text/css">
+      * {
+        box-sizing: border-box;
+      }
+      #footer {
+        text-align: center;
+        background-color: blue;
+        color: white;
+        padding-top: 10px;
+        height: 40px;
+        font-size: 20px;
+      }
+      .Sidebar {
+        border: 1px double yellow;
+        font-size: 30px;
+      }
+      .Header {
+        width: 100%;
+      }
+      .Home {
+        text-decoration: none;
+        margin-left: 10px;
+        font-size: 20px;
+      }
+      .About {
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 20px;
+      }
+      .Contact {
+        text-decoration: none;
+        margin-left: 30px;
+        font-size: 20px;
+      }
+      .Login {
+        text-decoration: none;
+        margin-left: 40px;
+        font-size: 20px;
+      }
+      .Content-body {
+        width: 100%;
+        height: 600px;
+        text-align: center;
+      }
+      .Left {
+        width: 30%;
+        background-color: red;
+        float: left;
+      }
+      .Right {
+        width: 70%;
+        float: right;
+        border: 1px dotted black;
+        height: 600px;
+        font-size: 10px;
+        color: rgba(0, 0, 0, 0.8);
+        padding-top: 4px;
+      }
+      .Right-top {
+        width: 100%;
+        height: 180px;
+      }
+      #ArjunBala {
+        height: 200;
+        width: 100;
+        float: left;
+      }
+      #ArjunBala-img {
+        max-width: 100;
+        height: auto;
+        margin-left: 4px;
+      }
+      #ArjunBala-text {
+        text-align: left;
+      }
+      #FirozSherasiya {
+        height: 200;
+        width: 100;
+        float: left;
+      }
+      #FirozShersasiya-img {
+        height: 180;
+        width: 100;
+        margin-left: 5px;
+      }
+      #Right-Bottom {
+        width: 100%;
+        height: 180px;
+        font-size: 10px;
+        color: rgba(0, 0, 0, 0.8);
+      }
+      .Image-div {
+        height: 200;
+        width: 100;
+        float: left;
+        margin-left: 10px;
+      }
+      .Image {
+        height: auto;
+        max-width: 100;
+      }
+      #Harsh-img {
+        height: auto;
+        max-width: 100%;
+      }
+      #Shyam-img {
+        height: auto;
+        max-width: 100;
+      }
+      figcaption {
+        text-align: left;
+      }
+      @media screen and (max-width: 480px) and (min-width: 275px) {
+        .Sidebar {
+          border: 1px double yellow;
+          font-size: 15px;
+        }
+        #footer {
+          text-align: left;
+          background-color: blue;
+          color: white;
+          padding-top: 10px;
+          height: 40px;
+          font-size: 20px;
+          margin-top: 125px;
+        }
+      }
+      @media screen and (max-width: 274px) {
+        .Sidebar {
+          border: 1px double yellow;
+          font-size: 10px;
+        }
+        #footer {
+          text-align: left;
+          background-color: blue;
+          color: white;
+          padding-top: 10px;
+          height: 40px;
+          font-size: 10px;
+          margin-top: 125px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Header">
+      <div
+        style="
+          height: 120px;
+          border-bottom: 1px dotted black;
+          margin-bottom: 10px;
+        "
+      >
+        <div style="float: left">
+          <img src="./Photo.webp" height="100" width="100" />
+        </div>
+        <div style="float: right; padding-top: 60px; padding-right: 250px">
+          <a href="#" class="Home">Home</a>
+          <a href="#" class="About">About</a>
+          <a href="#" class="Contact">Contact</a>
+          <a href="#" class="Login">Login</a>
+        </div>
+      </div>
+      <div class="Content-body">
+        <div class="Left">
+          <div
+            class="Sidebar"
+            style="width: 100%; height: 50px; padding-top: 5px"
+          >
+            Sidebar
+          </div>
+          <div class="Sidebar" style="height: 100px">Home</div>
+          <div class="Sidebar" style="height: 100px; margin-top: 10px">
+            Placement
+          </div>
+          <div class="Sidebar" style="height: 100px; margin-top: 10px">
+            Recruitment
+          </div>
+          <div class="Sidebar" style="height: 100px; margin-top: 10px">
+            Faculty
+          </div>
+          <div
+            class="Sidebar"
+            style="height: 100px; margin-top: 10px; margin-bottom: 10px"
+          >
+            News
+          </div>
+        </div>
+        <div class="Right">
+          <div class="Right-top">
+            <div id="ArjunBala">
+              <img src="./ArjunBala.png" id="ArjunBala-img" />
+              <figcaption id="ArjunBala-text">
+                Arjun Bala <br />BE,MTech(CSE)
+              </figcaption>
+            </div>
+            <div
+              id="FirozSherasiya"
+              style="height: 200; width: 100; float: left"
+            >
+              <img id="FirozSherasiya-img" src="./Wire.png" />
+              <figcaption>Firoz Sherasiya<br />BE,ME</figcaption>
+            </div>
+          </div>
+          <div>
+            <div id="Right-Bottom">
+              <div class="Image-div">
+                <img id="Image" src="./Wire.png" />
+                <figcaption>
+                  Harsh Kansagra<br />L&T PVT LTD<br />4.5 Lac
+                </figcaption>
+              </div>
+              <div class="Image-div">
+                <img id="Image" src="./hands.png" />
+                <figcaption>
+                  Shyam Kantesariya<br />Tata Consultancy Service<br />3.2 Lac
+                </figcaption>
+              </div>
+              <div class="Image-div">
+                <img id="Image" src="./cable.png" />
+                <figcaption>
+                  Jeet Dhamesha<br />Reliance Industry LTD<br />5.0 Lac
+                </figcaption>
+              </div>
+              <div class="Image-div">
+                <img id="Image" src="./phone.png" />
+                <figcaption>
+                  Harsh Maniar<br />Reliance Industry LTD<br />5.0 Lac
+                </figcaption>
+              </div>
+              <div class="Image-div">
+                <img id="Image" src="./plucker.png" />
+                <figcaption>Anand Dabhi<br />BSNL<br />5.5 Lac</figcaption>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer">&copyDarshan University-Rajkot</div>
+    </div>
+  </body>
+</html>

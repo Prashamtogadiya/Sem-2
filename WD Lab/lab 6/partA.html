@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      #page {
+        background-color: skyblue;
+        height: 100vh;
+        width: 100%;
+      }
+      #header {
+        background-color: purple;
+        height: 10%;
+      }
+      .one {
+        width: 40%;
+        float: left;
+        margin: 8px;
+      }
+      #sidebar {
+        background-color: black;
+        color: aliceblue;
+        float: right;
+        width: 50%;
+        height: 24%;
+        padding: 10px;
+        margin: 15px;
+      }
+      #content {
+        background-color: rgb(231, 181, 74);
+        height: 80%;
+      }
+      .entry {
+        background-color: black;
+        color: aliceblue;
+        margin: 15px;
+      }
+
+      #footer {
+        background-color: blue;
+        height: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="page">
+      Page
+      <div id="header">
+        <p>Header</p>
+      </div>
+      <div id="content">
+        <p>Content</p>
+        <div class="one">
+          <div class="entry">Entry</div>
+          <div class="entry">Entry</div>
+          <div class="entry">Entry</div>
+        </div>
+        <div id="sidebar">Sidebar</div>
+      </div>
+      <div id="footer">Dasrshan University Rajkot</div>
+    </div>
+  </body>
+</html>
